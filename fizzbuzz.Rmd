@@ -45,4 +45,16 @@ for(i in 1:100){
 }
 print(answer)
 ```
+###Angelina Vasquez Code
+```{r}
+for(i in 1:100)
+  if(i%%3==0){
+    print("Fizz")}
+ if(i%%5==0){
+  print( "Buzz" )
+ }else(i%%3==0 && i%%5==0)
+  print( "FizzBuzz" )
+  
+  #It did not work the way it was supposed to
+```
 

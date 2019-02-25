@@ -33,4 +33,20 @@ for (i in 1:1000) {
 avg_moves <- mean(count)
 print(avg_moves)
 ```
+###Angelina Vasquez Code
+```{r}
+save_rolls <- c()
+for(sims in 1:1000){
+  total_sum<-0
+  number_of_rolls<-0
+  while(total_sum < 25){
+    number_of_rolls <- number_of_rolls+1
+    total_sum <-total_sum+sample(c(1,2,3,4,5,6),1)
+  }
+  save_rolls[sims] <- number_of_rolls
+}
+mean(save_rolls)
+
+#Just used the code you had in the example. Couldn't come up with a solution
+```
 

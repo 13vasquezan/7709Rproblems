@@ -212,7 +212,23 @@ for (i in 1:1000) {
 }
 avg_moves &lt;- mean(count)
 print(avg_moves)</code></pre>
-<pre><code>## [1] 8.792</code></pre>
+<pre><code>## [1] 8.766</code></pre>
+</div>
+<div id="angelina-vasquez-code" class="section level3">
+<h3>Angelina Vasquez Code</h3>
+<pre class="r"><code>save_rolls &lt;- c()
+for(sims in 1:1000){
+  total_sum&lt;-0
+  number_of_rolls&lt;-0
+  while(total_sum &lt; 25){
+    number_of_rolls &lt;- number_of_rolls+1
+    total_sum &lt;-total_sum+sample(c(1,2,3,4,5,6),1)
+  }
+  save_rolls[sims] &lt;- number_of_rolls
+}
+mean(save_rolls)</code></pre>
+<pre><code>## [1] 7.626</code></pre>
+<pre class="r"><code>#Just used the code you had in the example. Couldn't come up with a solution</code></pre>
 </div>
 
 
